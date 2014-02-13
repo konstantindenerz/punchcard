@@ -1,6 +1,7 @@
 {
   "name": "punchcard",
   "version": "0.0.0",
+  "author": "Konstantin Denerz <konstantin.denerz@gmail.com> (https://github.com/konstantindenerz/",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
