@@ -29,8 +29,10 @@ module.exports = (grunt) ->
 	          ]
 	        }]
 	      },
-	      server: '.tmp'
+	      server: '.tmp',
+	      dist_concat: '<%= concat.dist.dest %>'
 	    },
+
 
 		"git-rev-parse": {
 		  build: {
@@ -129,7 +131,7 @@ module.exports = (grunt) ->
 		  },
 		  dist: {
 		    files: {
-		      '<%= yeoman.dist %>/scripts/<%= pkg.name %>-<%= pkg.version %>.min.js': ['<%= concat.dist.dest %>']
+		      '<%= yeoman.dist %>/scripts/<%= pkg.name %>.js': ['<%= concat.dist.dest %>']
 		    }
 		  }
 		},
@@ -218,7 +220,7 @@ module.exports = (grunt) ->
 	      html: ['<%= yeoman.dist %>/{,*/}*.html'],
 	      css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
 	      options: {
-	        assetsDirs: ['<%= yeoman.dist %>']
+	        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/scripts']
 	      }
 	    },
 
@@ -276,7 +278,8 @@ module.exports = (grunt) ->
 	    'uglify',
 	    #'rev',
 	    'usemin',
-	    'htmlmin'
+	    'htmlmin',
+	    #'clean:dist_concat'
 	  ]
 
 	
