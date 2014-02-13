@@ -107,8 +107,11 @@ module.exports = (grunt) ->
 
 		coffee: {
 			compile: {
+				options: {
+					join: true
+				}
 				files: {
-					'app/scripts/punchcard.js' : ['app/scripts/**/*.coffee', '!<%= yeoman.app %>/scripts/**/*demo.coffee'],
+					'app/scripts/punchcard.js' : ['app/scripts/**/*.coffee', '!<%= yeoman.app %>/scripts/**/demo*.coffee'],
 					'app/scripts/demo.js' : ['app/scripts/**/demo*.coffee']
 				}
 			}

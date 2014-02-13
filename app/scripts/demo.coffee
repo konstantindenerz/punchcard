@@ -1,6 +1,14 @@
+
 $ () ->
-	###commitPunchCard = new CommitPunchCard
-    userName = 'konstantindenerz';
-    repoName = 'punchcard';
-    gitRepoDataProvider = new GitRepoDataProvider true, commitMockData
-    #     var rawData = gitRepoDataProvider.getCommits(userName, repoName, delegate(commitPunchCard, commitPunchCard.use))###
+	userName = 'konstantindenerz'
+	repoName = 'punchcard'
+
+
+
+	punchCard = new lab.reports.PunchCard new GitCommitPunchCardConverter
+	
+	gitRepoDataProvider = new GitRepoDataProvider commitMockData
+	delegate = lab.util.delegate punchCard, punchCard.use
+	gitRepoDataProvider.retrieveCommits userName, repoName, delegate
+
+	return
