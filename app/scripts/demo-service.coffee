@@ -32,7 +32,6 @@ class GitCommitPunchCardConverter
 		for rowIndex, row of data
 			newRow = rowIndex: rowIndex, cells: []
 			for cellIndex, cellData of row
-				# newCell = cellIndex: cellIndex,	cellData: cellData
 				newRow.cells.push cellData
 			result.push newRow
 		result
