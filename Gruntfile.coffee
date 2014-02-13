@@ -106,7 +106,8 @@ module.exports = (grunt) ->
 		coffee: {
 			compile: {
 				files: {
-					'app/scripts/punchcard.js' : ['app/scripts/*.coffee']
+					'app/scripts/punchcard.js' : ['app/scripts/**/*.coffee', '!<%= yeoman.app %>/scripts/**/*demo.coffee'],
+					'app/scripts/demo.js' : ['app/scripts/**/*demo.coffee']
 				}
 			}
 		},
@@ -115,7 +116,7 @@ module.exports = (grunt) ->
 		    separator: ';'
 		  },
 		  dist: {
-		    src: ['<%= yeoman.app %>/scripts/**/*.js'],
+		    src: ['<%= yeoman.app %>/scripts/**/*.js', '!<%= yeoman.app %>/scripts/**/demo.js'],
 		    dest: '<%= yeoman.dist %>/scripts/<%= pkg.name %>.js'
 		  }
 		}
@@ -161,7 +162,8 @@ module.exports = (grunt) ->
 	            'views/{,*/}*.html',
 	            'bower_components/**/*',
 	            'images/{,*/}*.{webp}',
-	            'fonts/*'
+	            'fonts/*',
+	            'scripts/*demo.js'
 	          ]
 	        }, {
 	          expand: true,
