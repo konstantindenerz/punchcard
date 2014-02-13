@@ -20,5 +20,5 @@ $ () ->
 	$retrieveMockData = $ '#retrieveMockData'
 	$retrieveMockData.click ()-> retrieveData yes
 
-
+	retrieveData yes
 	return
