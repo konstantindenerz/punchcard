@@ -1,11 +1,12 @@
 module.exports = (grunt) ->
-	grunt.loadNpmTasks 'grunt-contrib-coffee'
-	grunt.loadNpmTasks 'grunt-contrib-uglify'
-	grunt.loadNpmTasks 'grunt-contrib-concat'
-	grunt.loadNpmTasks 'grunt-git-rev-parse'
 
+	
+	require('load-grunt-tasks')(grunt);
+	
 	grunt.initConfig {
 		pkg: grunt.file.readJSON('package.json'),
+		
+
 		"git-rev-parse": {
 		  build: {
 		    options: {
@@ -14,10 +15,16 @@ module.exports = (grunt) ->
 		    }
 		  }
 		},
+		watch: {
+	      js: {
+	        files: ['app/js/{,*/}*.js'],
+	        tasks: ['newer:jshint:all'],
+	      }
+	    },
 		coffee: {
 			compile: {
 				files: {
-					'app/js/result.js' : ['js/*.coffee']
+					'app/js/punchcard.js' : ['app/js/*.coffee']
 				}
 			}
 		},
@@ -46,4 +53,5 @@ module.exports = (grunt) ->
 
 	}
 
-	grunt.registerTask 'default', ['coffee', 'concat', 'git-rev-parse', 'uglify']
+
+	grunt.registerTask 'default', ['coffee', 'concat', 'git-rev-parse', 'uglify', 'watch']
