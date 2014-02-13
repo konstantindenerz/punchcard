@@ -15,7 +15,7 @@
 }
 
 .cell-data:hover{
-
+	-webkit-transform:scale(1.4);
 	background: rgba(110,60,110,1);
 }
 
