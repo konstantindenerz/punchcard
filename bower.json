@@ -1,0 +1,10 @@
+{
+  "name": "punchcard",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2"
+  },
+  "devDependencies": {
+    "d3" : "~3.4.1"
+  }
+}
