@@ -2,7 +2,7 @@ module.exports = (grunt) ->
 
 	
 	require('load-grunt-tasks')(grunt);
-	
+
 	grunt.initConfig {
 		pkg: grunt.file.readJSON('package.json'),
 		
@@ -262,6 +262,7 @@ module.exports = (grunt) ->
 	grunt.registerTask 'serve', ['clean:server', 'coffee', 'bower-install', 'concurrent:server', 'autoprefixer', 'connect:livereload', 'watch']
 
 	grunt.registerTask 'build', [
+		'git-rev-parse'
 		'coffee',
 	    'clean:dist',
 	    'bower-install',
@@ -271,7 +272,7 @@ module.exports = (grunt) ->
 	    'concat',
 	    'copy:dist',
 	    'uglify',
-	    'rev',
+	    #'rev',
 	    'usemin',
 	    'htmlmin'
 	  ]

@@ -1,6 +1,6 @@
 {
   "name": "punchcard",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Konstantin Denerz <konstantin.denerz@gmail.com> (https://github.com/konstantindenerz/",
   "dependencies": {},
   "devDependencies": {
