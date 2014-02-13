@@ -4,18 +4,29 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
+        <link href='css/punchcard.css' rel='stylesheet' type='text/javascript' />
     </head>
     <body>
+        <header>
+            <h1>Punch Card</h1>
+            <h2>Visualization Of Commits From GitHub</h2>
+            Commits from user<input id='user' value='konstantindenerz'/>repository<input id='repo' value='punchcard'/><button id='retrieveData'>Retrieve Data From GitHub</button><button id='retrieveMockData'>Use Local Data</button>
+        </header>
+        <table id='punchcard'>
+        </table>
+        <footer>
+            <small>Konstantin Denerz</small>
+        </footer>
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
         <script src="bower_components/d3/d3.js"></script>
         <!-- endbower -->
         <!-- build:js({.tmp,app}) scripts/punchcard.js -->
-            <script src='scripts/punchcard.js'></script>
+        <script src='scripts/punchcard.js'></script>
         <!-- endbuild -->
         <!-- build:js({.tmp,app}) scripts/demo.js -->
-            <script src='scripts/demo.js'></script>
+        <script src='scripts/demo.js'></script>
         <!-- endbuild -->
-        
+
     </body>
 </html>

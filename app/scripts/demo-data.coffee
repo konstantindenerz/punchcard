@@ -2,6 +2,131 @@ commitMockData = [
 	{
 		commit: 
 			author: 
+				date: '2011-04-18T18:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T18:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T18:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-21T13:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
+				date: '2011-04-18T06:00:49Z'
+	}
+	{
+		commit: 
+			author: 
 				date: '2011-04-14T01:00:49Z'
 	}
 	{
@@ -12,7 +137,7 @@ commitMockData = [
 	{
 		commit: 
 			author: 
-				date: '2011-04-18T012:00:49Z'
+				date: '2011-04-19T20:00:49Z'
 	}
 	{
 		commit: 
@@ -42,7 +167,7 @@ commitMockData = [
 	{
 		commit: 
 			author: 
-				date: '2011-04-18T012:00:49Z'
+				date: '2011-04-19T20:00:49Z'
 	}
 	{
 		commit: 
@@ -72,7 +197,7 @@ commitMockData = [
 	{
 		commit: 
 			author: 
-				date: '2011-04-18T012:00:49Z'
+				date: '2011-04-19T20:00:49Z'
 	}
 	{
 		commit: 
@@ -102,7 +227,7 @@ commitMockData = [
 	{
 		commit: 
 			author: 
-				date: '2011-04-18T012:00:49Z'
+				date: '2011-04-19T20:00:49Z'
 	}
 	{
 		commit: 
