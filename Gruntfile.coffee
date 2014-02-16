@@ -264,10 +264,18 @@ module.exports = (grunt) ->
 	        }]
 	      }
 	    },
+	    docco: {
+		  debug: {
+		    src: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
+		    options: {
+		      output: 'docs/'
+		    }
+		  }
+		}
 	}
 
 
-	grunt.registerTask 'serve', ['clean:server', 'coffee', 'bower-install', 'concurrent:server', 'autoprefixer', 'connect:livereload', 'watch']
+	grunt.registerTask 'serve', ['clean:server', 'coffee', 'docco', 'bower-install', 'concurrent:server', 'autoprefixer', 'connect:livereload', 'watch']
 
 	grunt.registerTask 'build', [
 		'git-rev-parse'
