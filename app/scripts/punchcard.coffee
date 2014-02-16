@@ -49,7 +49,7 @@ scope.lab.reports.PunchCard = class
 		maxCellValue = getMaxValueOfCells.call this, data
 		maxCellValue = Math.max maxCellValue, 1 # Avoid a devision by zero
 		size = this.currentFormat.size
-		punchcard = d3.select(@selector);
+		punchcard = d3.select(@selector)
 		punchcard.selectAll('thead, tbody').remove()
 		punchcard.append('thead')
 			.selectAll('tr')
@@ -70,7 +70,7 @@ scope.lab.reports.PunchCard = class
 			.append('div')
 			.attr('class', 'cell-data')
 			.attr 'style', (d)->
-				newSize = d * size / maxCellValue
+				newSize = d * size / maxCellValue # calculate the new size relative to max size bound
 				if size > 0 then "width:#{newSize}px;height:#{newSize}px;" else 'display:none;'
 			.attr('title', (d)-> d)
 			.text((d)-> d)

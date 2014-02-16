@@ -1,6 +1,5 @@
 
 $ () ->
-
 	retrieveData = (useMockData)->
 		userName = $('#user').val()
 		repoName = $('#repo').val()
