@@ -3,3 +3,4 @@ dist
 .tmp
 app/bower_components
 app/scripts/*.js
+*.zip
